@@ -1,0 +1,21 @@
+ja:
+  add_on:
+    add_on_maker_variant: メーカー別情報
+    listing_add_on_maker_variant: メーカー別情報一覧
+    back_to_add_on_maker_variants_list: 登録済メーカー別情報一覧
+    back_to_product_add_on_maker_variants_list: メーカー別情報一覧へ戻る
+    this_product_does_not_have_any_add_on_maker: この商品に登録されているメーカーがありません
+    please_set_add_on_maker_to_product: メーカーを登録してください。
+    notice_messages:
+      admin_product_variant_add_on_maker_variant_created: メーカー別情報を作成しました
+      admin_product_variant_add_on_maker_variant_has_error: エラーが発生しました
+  activerecord:
+    attributes:
+      add_on_maker_variant:
+        variant_id: 種類 ID
+        article_number: JANコード
+        list_price_amount: 定価
+        list_price_currency: 定価の通貨単位
+        min_price_amount: 最低販売価格
+        min_price_currency: 最低販売価格の通貨単位
+        is_discontinued: 販売終了

@@ -1,0 +1,21 @@
+en:
+  add_on:
+    add_on_maker_variant: Maker Variant
+    listing_add_on_maker_variant: Listing Maker Variants
+    back_to_add_on_maker_variants_list: Back To Maker Variants List
+    back_to_product_add_on_maker_variants_list: Back To Maker Variants List
+    this_product_does_not_have_any_add_on_maker: This product does not have any maker.
+    please_set_add_on_maker_to_product: Please set maker information to this product.
+    notice_messages:
+      admin_product_variant_add_on_maker_variant_created: Maker Variant has been successfully created!
+      admin_product_variant_add_on_maker_variant_has_error: Cannnot save for invalid data.
+  activerecord:
+    attributes:
+      add_on_maker_variant:
+        variant_id: Variant ID
+        article_number: Article Number
+        list_price_amount: List Price
+        list_price_currency: List Price Currency
+        min_price_amount: Minimum Selling Price
+        min_price_currency: Minimum Selling Price Currency
+        is_discontinued: Discontinued (Checked discontinued)

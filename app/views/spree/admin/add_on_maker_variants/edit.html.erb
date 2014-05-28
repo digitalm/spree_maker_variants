@@ -1,0 +1,72 @@
+<%= render :partial => 'spree/admin/shared/product_sub_menu' %>
+
+<%= render :partial => 'spree/admin/shared/product_tabs', :locals => {:current => 'Add On Maker Variants'} %>
+
+<% content_for :page_title do %>
+  : <%= @add_on_maker_variant.variant.sku %>
+<% end %>
+
+<% content_for :page_actions do %>
+  <li>
+    <%= button_link_to t('add_on.back_to_product_add_on_maker_variants_list'), admin_product_variant_add_on_maker_variants_path, :icon => 'icon-arrow-left' %>
+  </li>  
+<% end %>
+
+<%= form_for [:admin, @product, @variant, @add_on_maker_variant], url: admin_product_variant_add_on_maker_variant_path(:variant_id => params[:variant_id], :id => params[:id]) do |f| %>
+  <div data-hook="admin_inside_add_on_maker_variant_form" class="row">
+    <div class='alpha six columns'>
+
+      <%= f.field_container :article_number do %>
+          <%= f.label :article_number, t('activerecord.attributes.add_on_maker_variant.article_number') %>
+          <%= f.text_field :article_number, :class => 'fullwidth', :autofocus => true %>
+          <%= f.error_message_on :article_number %>
+      <% end %>
+
+
+        <div class="alpha three columns">
+      <%= f.field_container :list_price_amount do %>
+          <%= f.label :list_price_amount, t('activerecord.attributes.add_on_maker_variant.list_price_amount') %>
+          <%= f.text_field :list_price_amount, :class => 'fullwidth' %>
+          <%= f.error_message_on :list_price_amount %>
+      <% end %>
+        </div>
+
+        <div class="omega three columns">
+      <%= f.field_container :list_price_currency do %>
+          <%= f.label :list_price_currency, t('activerecord.attributes.add_on_maker_variant.list_price_currency') %>
+          <%= f.text_field :list_price_currency, :class => 'fullwidth' %>
+          <%= f.error_message_on :list_price_currency %>
+      <% end %>
+        </div>
+
+        <div class="alpha three columns">
+    <%= f.field_container :min_price_amount do %>
+        <%= f.label :min_price_amount, t('activerecord.attributes.add_on_maker_variant.min_price_amount') %>
+        <%= f.text_field :min_price_amount, :class => 'fullwidth' %>
+        <%= f.error_message_on :min_price_amount %>
+    <% end %>
+        </div>
+
+        <div class="omega three columns">
+    <%= f.field_container :min_price_currency do %>
+        <%= f.label :min_price_currency, t('activerecord.attributes.add_on_maker_variant.min_price_currency') %>
+        <%= f.text_field :min_price_currency, :class => 'fullwidth' %>
+        <%= f.error_message_on :min_price_currency %>
+    <% end %>
+        </div>
+    <div class="clear"></div>
+    </div>
+    <div class='omega six columns'>
+    <%= f.field_container :is_discontinued do %>
+        <%= f.label :is_discontinued, t('activerecord.attributes.add_on_maker_variant.is_discontinued') %>
+        <%= f.check_box :is_discontinued, :class => 'fullwidth' %>
+        <%= f.error_message_on :is_discontinued %>
+    <% end %>
+    </div>
+  </div>
+
+
+  <%= f.submit %>
+
+  </div>
+<% end %>
