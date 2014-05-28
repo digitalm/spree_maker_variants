@@ -18,7 +18,9 @@ Enable to manage.
 
 Dependency
 ------------
-It needs [spree_add_on_menu](https://github.com/digitalm/spree_add_on_menu) and [spree_maker_search](https://github.com/digitalm/spree_maker_search)
+It needs 
+* [spree_add_on_menu](https://github.com/digitalm/spree_add_on_menu) for admin menu tab expanding
+* [spree_maker_search](https://github.com/digitalm/spree_maker_search) for maker list managing
 Is there anyone who dont wants maker search ???
 
 Installation
