@@ -7,10 +7,10 @@ Purpose
 * Items are : "Article Number", "Maker Price" and currency, "Minimum Selling Price" and currency, "Discontinued"
 * Nothing does not affect storefront.
 
-Appears link "MAKER VARIANT DATA" to Product side menu.
+Appears link "MAKER VARIANT" to Product side menu.
 ![MakerVariants](https://raw.githubusercontent.com/wiki/digitalm/spree_maker_variants/images/makervariants1.jpg)
 
-"MAKER VARIANT DATA" show variant list. Select particular variant and edit
+"MAKER VARIANT" show variant list. Select particular variant and edit
 ![MakerVariants](https://raw.githubusercontent.com/wiki/digitalm/spree_maker_variants/images/makervariants2.jpg)
 
 Enable to manage.
@@ -21,7 +21,7 @@ Dependency
 It needs 
 * [spree_add_on_menu](https://github.com/digitalm/spree_add_on_menu) for admin menu tab expanding
 * [spree_maker_search](https://github.com/digitalm/spree_maker_search) for maker list managing
-Is there anyone who dont wants maker search ???
+Is there anyone who dont wants maker search?
 
 Installation
 ------------
