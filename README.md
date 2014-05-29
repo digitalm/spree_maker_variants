@@ -29,7 +29,7 @@ Installation
 Add spree_maker_variants to your Gemfile:
 
 ```ruby
-gem 'spree_maker_variants'
+gem 'spree_maker_variants', github: 'digitalm/spree_maker_variants'
 ```
 
 Bundle your dependencies and run the installation generator:
